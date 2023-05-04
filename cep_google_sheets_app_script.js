@@ -29,7 +29,7 @@ var sheet = current_sheet.getSheetByName("Página1");
 var row = sheet.getActiveCell().getRow();
 var post_code = sheet.getRange(row,1).getValue();
 
-// whether postcode cell is blank, a false boolean aftermath will be given  
+// whether postcode cell is blank, a false boolean aftermath will be given and all cells will be cleared
     
 if(post_code == ""){
   sheet.getRange(row,2,1,6).clearContent();
